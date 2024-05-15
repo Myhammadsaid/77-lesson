@@ -25,8 +25,9 @@ const Header = () => {
               className={`nav-links ${toggle ? "open" : ""}`}
               id="navbar-responsive"
             >
-              <NavLink to={"/contact"} className="nav-link">
-                About Us
+              <NavLink className="nav-link">About Us</NavLink>
+              <NavLink className="nav-link" to={"/cart"}>
+                Cart
               </NavLink>
               <form className="header-form">
                 <input

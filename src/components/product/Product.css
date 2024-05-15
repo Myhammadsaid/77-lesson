@@ -35,6 +35,10 @@
   letter-spacing: 0.05em;
 }
 
+.product-btn {
+  background: none;
+}
+
 @media (max-width: 690px) {
   .product-cards {
     justify-content: center !important;

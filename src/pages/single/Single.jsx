@@ -1,6 +1,6 @@
 import React from "react";
 import "./Single.css";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useGetDetailProductQuery } from "../../context/productApi";
 
 const Single = () => {
@@ -28,7 +28,9 @@ const Single = () => {
               <h3>
                 Stock({product?.stock}) {product?.price}$
               </h3>
-              <s>{product?.price * 2}$</s>
+              <NavLink to={"/contact"}>
+                <button className="single-btn">Buy Now</button>
+              </NavLink>
             </div>
           </div>
         </div>
