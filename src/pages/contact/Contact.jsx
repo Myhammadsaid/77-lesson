@@ -9,6 +9,7 @@ const chat_id = "-4208163629";
 let initialState = {
   fname: "",
   lname: "",
+  comment: "",
 };
 const Contact = () => {
   const carts = useSelector((s) => s.cart.value);
@@ -21,6 +22,7 @@ const Contact = () => {
 
     text += `Ismi: ${data.fname} %0A`;
     text += `Familyasi: ${data.lname} %0A`;
+    text += `Comment: ${data.comment} %0A%0A`;
 
     carts?.forEach((product) => {
       text += `Nomi: ${product.title} %0A`;
@@ -41,6 +43,7 @@ const Contact = () => {
           <h2 className="contact-title">Contact</h2>
           <form className="contact-form" onSubmit={handleSubmit} action="">
             <input
+              className="contact-input"
               value={data.fname}
               onChange={(e) =>
                 setData((p) => ({ ...p, fname: e.target.value }))
@@ -49,6 +52,7 @@ const Contact = () => {
               placeholder="FirstName"
             />
             <input
+              className="contact-input"
               value={data.lname}
               onChange={(e) =>
                 setData((p) => ({ ...p, lname: e.target.value }))
@@ -56,6 +60,14 @@ const Contact = () => {
               type="text"
               placeholder="LastName"
             />
+            <textarea
+              value={data.comment}
+              className="textarea"
+              placeholder="Comment..."
+              onChange={(e) =>
+                setData((p) => ({ ...p, comment: e.target.value }))
+              }
+            ></textarea>
             <button>Send</button>
           </form>
         </div>
