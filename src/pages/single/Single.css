@@ -1,0 +1,21 @@
+.single-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.single-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.single-content {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 15px;
+}

@@ -1,0 +1,29 @@
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.contact-form input {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.contact-form button {
+  width: 100px;
+  height: 20px;
+}
