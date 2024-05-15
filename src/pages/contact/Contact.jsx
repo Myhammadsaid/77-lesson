@@ -56,7 +56,7 @@ const Contact = () => {
               type="text"
               placeholder="LastName"
             />
-            <button>Buy now</button>
+            <button>Send</button>
           </form>
         </div>
       </div>
