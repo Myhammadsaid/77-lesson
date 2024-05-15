@@ -25,7 +25,7 @@ const Contact = () => {
     carts?.forEach((product) => {
       text += `Nomi: ${product.title} %0A`;
       text += `Miqdori: ${product.quantity} %0A`;
-      text += `Narxi: ${product.price}$ %0A`;
+      text += `Narxi: ${product.price}$ %0A%0A`;
     });
 
     let url = `https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${text}`;
